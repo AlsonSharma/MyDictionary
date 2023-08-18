@@ -1,6 +1,6 @@
 # Dictionary API Mini Project
 
-Welcome to the Word Definition Search website! This simple web application allows users to search for the definition of English words using the Dictionary API.
+Welcome to the Your Dictionary Search website! This simple web application allows users to search for the definitions and meanings of English words using the Dictionary API.
 
 ## Usage
 
@@ -34,3 +34,8 @@ Feel free to explore, modify, and contribute to this project!
 ## Credits
 
 This project is created by Alson Sharma. If you have any questions or suggestions, you can reach out to me at [sharmaalson@gmail.com]. 
+
+## API Credits
+
+This project utilizes the [Dictionary API].(https://dictionaryapi.dev), which provides access to the word definitions. The API allows users to retrieve definitions, meanings, and more for various words. 
+I would like to express our gratitude to the creators of the Dictionary API for providing this valuable resource.

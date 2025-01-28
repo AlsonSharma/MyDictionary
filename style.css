@@ -1,46 +1,133 @@
-body{
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: rgb(41, 39, 39);
+    box-sizing: border-box;
 }
-.container{
-    text-align: center;
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
     padding: 20px;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: white;
 }
 
-h1{
-    color: black;
-    margin-bottom: 20px;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-input{
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+input {
+    width: calc(100% - 120px);
+    padding: 12px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 8px;
     margin-right: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-button{
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #1176e3;
-    color: white;
+input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+    outline: none;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #3498db;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
-button:hover{
-    background-color: #007bff;
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
 }
+
+button:active {
+    transform: translateY(0);
+}
+
 #result {
+    margin-top: 25px;
+    font-size: 1.2em;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+#phonetic {
+    margin-top: 10px;
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+#origin {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #95a5a6;
+}
+
+#meanings {
+    margin-top: 25px;
+}
+
+#meanings h3 {
     margin-top: 20px;
-    font-size: 1.125rem;
-    color: black;
+    color: #2c3e50;
+    font-size: 1.3em;
+    font-weight: 600;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+}
+
+#meanings p {
+    margin: 12px 0;
+    color: #555;
+    line-height: 1.8;
+}
+
+#meanings p strong {
+    color: #2c3e50;
+}
+
+audio {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    opacity: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
 }
